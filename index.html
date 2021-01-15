@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Prata&display=swap" rel="stylesheet">
   <title>Document</title>
   <style>
     * {
@@ -21,31 +22,67 @@
       align-items: center;
       justify-content: center;
     }
+    h1 {
+      font-family: 'Cormorant', serif;
+    }
     .header p {
       font-family: Linux Libertine,Georgia,Times,serif;
+      color: #54595d;
     }
     .central-logo {
-      width: 200px;
-      height: 183px;
+      width: 210px;
+      height: 190px;
+      align-self: center;
     }
     .main-section {
       display: flex;
       justify-content: center;
       width: 100%;
-      height: 325px;
+      height: 270px;
+    }
+    .central-logo {
+      position: relative;
+      margin: 10px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 460px;
+      position: absolute;
+      line-height: 1.5;
+    }
+    .container div a {
+      text-decoration: none;
+      color: #3366cc;
+      line-height: 10px;
+      font-weight: 500;
+    }
+    .container div p {
+      color: #54595d;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <header class="header">
-    <h1>WikipediA</h1>
+    <h1>WIKIPEDIA</h1>
     <p>La enciclopedia libre</p>
   </header>
   <section class="main-section">
-    <div>
+    <div class="central-logo">
       <img class="central-logo" src="./1200px-Wikipedia-logo-v2.svg.png" alt="wikipedia">
     </div>
-  </section>
+    <div class="container">
+      <div>
+        <a href="">Español</a>
+        <p>1 652 000+ artículos</p>
+      </div>
+      <div class="english">
+        <a href="">English</a>
+        <p>6 226 000+ articles</p>
+      </div>
+    </div>
+    </section>
   <section class="secondary-section">
   </section>
   <footer class="footer"></footer>
