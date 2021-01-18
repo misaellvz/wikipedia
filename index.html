@@ -170,6 +170,44 @@
       color: #54595d;
       text-align: center;
     }
+    .input-container {
+      margin-top: 420px;
+      position: absolute;
+      width: 60%;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      border: 1px solid #3366cc;
+    }
+    .input {
+      position: absolute;
+      width: 60%;
+      height: 25px;
+    }
+    .label-container {
+      width: 50px;
+      height: 24px;
+      position: absolute;
+    }
+    .label {
+      color: #54595d;
+      margin: 0;
+      font-size: 13px;
+      line-height: 24px;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+    .label select {
+      background-color: transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 0 24px;
+
+    }
+    .arrow {
+    }
   </style>
 </head>
 <body>
@@ -230,6 +268,22 @@
         <a href=""><strong>Polski</strong></a>
         <p>1 448 000+ haseł</p>
       </div>
+    </div>
+    <div class="input-container">
+      <input class="input" type="text">
+        <div class="label-container">
+          <div class="arrow">
+            <label class="label" for="searchLanguage">en</label>
+            <select name="language" id="searchLanguage">
+              <option value="es" lang="es">Español</option>
+              <option value="en" lang="en">English</option>
+              <option value="de" lang="de">Deutsch</option>
+              <option value="fr" lang="fr">Français</option>
+              <option value="it" lang="it">Italiano</option>
+              <option value="pt" lang="pt">Português</option>
+            </select>
+          </div>
+        </div>
     </div>
     </section>
   <section class="secondary-section">
