@@ -347,7 +347,7 @@
       margin: 0 auto;
       padding: 41.8px 12.8px 12.8px;
       max-width: 460px;
-      width: 35%;
+      width: 30%;
       display: block;
       margin-top: 100px;
       font-size: 13px;
@@ -439,14 +439,21 @@
     .wiki-apps {
       margin-top: 150px;
       display: inline-block;
+      margin-left: 50px;
+      width: 57%;
     }
 
     .wiki-apps-container {
-      max-width: 58%;
+      display: inline-block;
+      width: 30%;
+      margin: 15px 0 0 15px;
 
     }
 
     .commons {
+      display: inline-block;
+      min-height: 50px;
+      white-space: nowrap;
       text-decoration: none;
     }
 
@@ -459,16 +466,124 @@
     .wiki-apps-commons {
       background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
       vertical-align: middle;
-      display: inline-block;
       background-position: 0 0;
       width: 47px;
       height: 47px;
+      flex: 0 0 47px;
+      display: inline-block;
+    }
+
+    .wiki-apps-voyage {
+      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
+      background-position: 0 -446px;
+      width: 36px;
+      height: 36px;
+      display: inline-block;
+    }
+
+    .wiki-apps-dictionary {
+      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
+      background-position: 0 -482px;
+      width: 37px;
+      height: 37px;
+      display: inline-block;
+    }
+
+    .wiki-apps-wikibooks {
+      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
+      background-position: 0 -126px;
+      width: 37px;
+      height: 37px;
+      display: inline-block;
+    }
+
+    .wiki-apps-wikinews {
+      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikinews-logo_sister.png");
+      background-position: 0 0;
+      background-size: 47px 26px;
+      width: 47px;
+      height: 26px;
+      display: inline-block;
+    }
+
+    .wiki-apps-wikidata {
+      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
+      background-position: 0 -163px;
+      width: 49px;
+      height: 49px;
+      display: inline-block;
+    }
+
+    .wiki-apps-wikiversity {
+      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
+      background-position: 0 -409px;
+      width: 43px;
+      height: 37px;
+      display: inline-block;
+    }
+
+    .wiki-apps-wikiquote {
+      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
+      background-position: 0 -286px;
+      width: 42px;
+      height: 42px;
+      display: inline-block;
+    }
+
+    .wiki-apps-mediawiki {
+      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
+      background-position: 0 -47px;
+      width: 42px;
+      height: 42px;
+      display: inline-block;
+    }
+
+    .wiki-apps-wikisource {
+      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
+      background-position: 0 -328px;
+      width: 39px;
+      height: 39px;
+      display: inline-block;
+    }
+
+    .wiki-apps-wikispecies {
+      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
+      background-position: 0 -367px;
+      width: 42px;
+      height: 42px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .wiki-apps-metawiki {
+      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
+      background-position: 0 -89px;
+      width: 37px;
+      height: 37px;
+      display: inline-block;
     }
 
     .commons-span2 {
       color: #54595d;
       font-size: 13px;
-      margin-left: 10px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    .footer-a {
+      text-decoration: none;
+      color: #3366cc;
+    }
+
+    .footer-a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -593,8 +708,93 @@
         <span class="commons-span2">Freely usable photos & more</span>
       </a>
     </div>
+    <div class="wiki-apps-container">
+      <div class="wiki-apps-voyage"></div>
+      <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
+        <span class="commons-span1">Wikivoyage</span>
+        <span class="commons-span2">Free travel guide</span>
+      </a>
+    </div>
+    <div class="wiki-apps-container">
+      <div class="wiki-apps-dictionary"></div>
+      <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
+        <span class="commons-span1">Wikidictionary</span>
+        <span class="commons-span2">Free dictionary</span>
+      </a>
+    </div>
+    <div class="wiki-apps-container">
+      <div class="wiki-apps-wikibooks"></div>
+      <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
+        <span class="commons-span1">Wikibooks</span>
+        <span class="commons-span2">Free textbooks</span>
+      </a>
+    </div>
+    <div class="wiki-apps-container">
+      <div class="wiki-apps-wikinews"></div>
+      <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
+        <span class="commons-span1">Wikinews</span>
+        <span class="commons-span2">Free news source</span>
+      </a>
+    </div>
+    <div class="wiki-apps-container">
+      <div class="wiki-apps-wikidata"></div>
+      <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
+        <span class="commons-span1">Wikidata</span>
+        <span class="commons-span2">Free knowledge base</span>
+      </a>
+    </div>
+    <div class="wiki-apps-container">
+      <div class="wiki-apps-wikiversity"></div>
+      <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
+        <span class="commons-span1">Wikiversity</span>
+        <span class="commons-span2">Free course materials</span>
+      </a>
+    </div>
+    <div class="wiki-apps-container">
+      <div class="wiki-apps-wikiquote"></div>
+      <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
+        <span class="commons-span1">Wikiquote</span>
+        <span class="commons-span2">Free quote compendium</span>
+      </a>
+    </div>
+    <div class="wiki-apps-container">
+      <div class="wiki-apps-mediawiki"></div>
+      <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
+        <span class="commons-span1">MediaWiki</span>
+        <span class="commons-span2">Free & open wiki application</span>
+      </a>
+    </div>
+    <div class="wiki-apps-container">
+      <div class="wiki-apps-wikisource"></div>
+      <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
+        <span class="commons-span1">Wikisource</span>
+        <span class="commons-span2">Free library</span>
+      </a>
+    </div>
+    <div class="wiki-apps-container">
+      <div class="wiki-apps-wikispecies"></div>
+      <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
+        <span class="commons-span1">Wikispecies</span>
+        <span class="commons-span2">Free species directory</span>
+      </a>
+    </div>
+    <div class="wiki-apps-container">
+      <div class="wiki-apps-metawiki"></div>
+      <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
+        <span class="commons-span1">Meta-Wiki</span>
+        <span class="commons-span2">Community coordination & documentation</span>
+      </a>
+    </div>
   </section>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <p>
+      <small>This page is available under the <a class="footer-a"
+          href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+          Attribution-ShareAlike License</a></small>
+      <small>· <a class="footer-a" class="" href="https://meta.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a></small>
+      <small>· <a class="footer-a" href="https://meta.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a></small>
+    </p>
+  </footer>
 </body>
 
 </html>
