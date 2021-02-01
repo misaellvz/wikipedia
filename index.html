@@ -438,23 +438,47 @@
 
     .wiki-apps {
       margin-top: 150px;
-      display: inline-block;
-      margin-left: 50px;
-      width: 57%;
+      display: flex;
+      margin-left: 0;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) {
+      .wiki-apps {
+        margin-left: 50px;
+        width: 57%;
+      }
     }
 
     .wiki-apps-container {
-      display: inline-block;
-      width: 30%;
-      margin: 15px 0 0 15px;
+      display: flex;
+      width: 100%;
+      flex-basis: 100%;
+      padding: 15px 0 0 15px;
+    }
 
+    @media screen and (min-width: 280px) {
+      .wiki-apps-container {
+        width: 50%;
+        flex-basis: 50%;
+      }
+    }
+
+    @media screen and (min-width: 480px) {
+      .wiki-apps-container {
+        width: 33%;
+        flex-basis: 33%;
+      }
     }
 
     .commons {
       display: inline-block;
       min-height: 50px;
-      white-space: nowrap;
+      max-width: 65%;
       text-decoration: none;
+      vertical-align: middle;
+
     }
 
     .commons-span1 {
@@ -463,38 +487,35 @@
       display: block;
     }
 
-    .wiki-apps-commons {
+    .wiki-apps-logo {
       background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
+      display: inline-block;
       vertical-align: middle;
+    }
+
+    .wiki-apps-commons {
       background-position: 0 0;
       width: 47px;
       height: 47px;
       flex: 0 0 47px;
-      display: inline-block;
     }
 
     .wiki-apps-voyage {
-      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
       background-position: 0 -446px;
       width: 36px;
       height: 36px;
-      display: inline-block;
     }
 
     .wiki-apps-dictionary {
-      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
       background-position: 0 -482px;
       width: 37px;
       height: 37px;
-      display: inline-block;
     }
 
     .wiki-apps-wikibooks {
-      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
       background-position: 0 -126px;
       width: 37px;
       height: 37px;
-      display: inline-block;
     }
 
     .wiki-apps-wikinews {
@@ -503,64 +524,49 @@
       background-size: 47px 26px;
       width: 47px;
       height: 26px;
-      display: inline-block;
     }
 
     .wiki-apps-wikidata {
-      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
       background-position: 0 -163px;
       width: 49px;
       height: 49px;
-      display: inline-block;
     }
 
     .wiki-apps-wikiversity {
-      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
       background-position: 0 -409px;
       width: 43px;
       height: 37px;
-      display: inline-block;
     }
 
     .wiki-apps-wikiquote {
-      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
       background-position: 0 -286px;
       width: 42px;
       height: 42px;
-      display: inline-block;
     }
 
     .wiki-apps-mediawiki {
-      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
       background-position: 0 -47px;
       width: 42px;
       height: 42px;
-      display: inline-block;
     }
 
     .wiki-apps-wikisource {
-      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
       background-position: 0 -328px;
       width: 39px;
       height: 39px;
-      display: inline-block;
     }
 
     .wiki-apps-wikispecies {
-      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
       background-position: 0 -367px;
       width: 42px;
       height: 42px;
-      display: inline-block;
       vertical-align: middle;
     }
 
     .wiki-apps-metawiki {
-      background-image: url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg");
       background-position: 0 -89px;
       width: 37px;
       height: 37px;
-      display: inline-block;
     }
 
     .commons-span2 {
@@ -702,84 +708,84 @@
   </section>
   <section class="wiki-apps">
     <div class="wiki-apps-container">
-      <div class="wiki-apps-commons"></div>
+      <div class="wiki-apps-commons wiki-apps-logo"></div>
       <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
         <span class="commons-span1">Commons</span>
         <span class="commons-span2">Freely usable photos & more</span>
       </a>
     </div>
     <div class="wiki-apps-container">
-      <div class="wiki-apps-voyage"></div>
+      <div class="wiki-apps-voyage wiki-apps-logo"></div>
       <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
         <span class="commons-span1">Wikivoyage</span>
         <span class="commons-span2">Free travel guide</span>
       </a>
     </div>
     <div class="wiki-apps-container">
-      <div class="wiki-apps-dictionary"></div>
+      <div class="wiki-apps-dictionary wiki-apps-logo"></div>
       <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
         <span class="commons-span1">Wikidictionary</span>
         <span class="commons-span2">Free dictionary</span>
       </a>
     </div>
     <div class="wiki-apps-container">
-      <div class="wiki-apps-wikibooks"></div>
+      <div class="wiki-apps-wikibooks wiki-apps-logo"></div>
       <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
         <span class="commons-span1">Wikibooks</span>
         <span class="commons-span2">Free textbooks</span>
       </a>
     </div>
     <div class="wiki-apps-container">
-      <div class="wiki-apps-wikinews"></div>
+      <div class="wiki-apps-wikinews wiki-apps-logo"></div>
       <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
         <span class="commons-span1">Wikinews</span>
         <span class="commons-span2">Free news source</span>
       </a>
     </div>
     <div class="wiki-apps-container">
-      <div class="wiki-apps-wikidata"></div>
+      <div class="wiki-apps-wikidata wiki-apps-logo"></div>
       <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
         <span class="commons-span1">Wikidata</span>
         <span class="commons-span2">Free knowledge base</span>
       </a>
     </div>
     <div class="wiki-apps-container">
-      <div class="wiki-apps-wikiversity"></div>
+      <div class="wiki-apps-wikiversity wiki-apps-logo"></div>
       <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
         <span class="commons-span1">Wikiversity</span>
         <span class="commons-span2">Free course materials</span>
       </a>
     </div>
     <div class="wiki-apps-container">
-      <div class="wiki-apps-wikiquote"></div>
+      <div class="wiki-apps-wikiquote wiki-apps-logo"></div>
       <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
         <span class="commons-span1">Wikiquote</span>
         <span class="commons-span2">Free quote compendium</span>
       </a>
     </div>
     <div class="wiki-apps-container">
-      <div class="wiki-apps-mediawiki"></div>
+      <div class="wiki-apps-mediawiki wiki-apps-logo"></div>
       <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
         <span class="commons-span1">MediaWiki</span>
         <span class="commons-span2">Free & open wiki application</span>
       </a>
     </div>
     <div class="wiki-apps-container">
-      <div class="wiki-apps-wikisource"></div>
+      <div class="wiki-apps-wikisource wiki-apps-logo"></div>
       <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
         <span class="commons-span1">Wikisource</span>
         <span class="commons-span2">Free library</span>
       </a>
     </div>
     <div class="wiki-apps-container">
-      <div class="wiki-apps-wikispecies"></div>
+      <div class="wiki-apps-wikispecies wiki-apps-logo"></div>
       <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
         <span class="commons-span1">Wikispecies</span>
         <span class="commons-span2">Free species directory</span>
       </a>
     </div>
     <div class="wiki-apps-container">
-      <div class="wiki-apps-metawiki"></div>
+      <div class="wiki-apps-metawiki wiki-apps-logo"></div>
       <a class="commons" href="https://commons.wikimedia.org/wiki/Main_Page">
         <span class="commons-span1">Meta-Wiki</span>
         <span class="commons-span2">Community coordination & documentation</span>
