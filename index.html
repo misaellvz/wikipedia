@@ -293,9 +293,18 @@
       height: 46px;
       margin: 0;
       display: inline-block;
-      border: 0;
-      border-top-right-radius: 2px;
-      border-bottom-right-radius: 2px;
+      border: 1px;
+      border-top-right-radius: 1px;
+      border-bottom-right-radius: 1px;
+    }
+
+    .line-of-middle {
+      background-color: #c8ccd1;
+      width: 80%;
+      height: 1px;
+      max-width: 460px;
+      margin: -16px auto 16px;
+      position: relative;
     }
 
     .select option {
@@ -316,12 +325,23 @@
 
     .laguage-selector button {
       width: 300px;
+      background-color: #fff;
       height: 36px;
       color: #3366cc;
+      z-index: 1;
+      position: relative;
+      border-radius: 2px;
+      outline: 1.6rem solid #fff;
+    }
+
+    .laguage-selector button:hover {
+      background-color: #fff;
+
     }
 
     .laguage-button {
       padding: 6px 12px;
+      border: 1px solid #a2a9b1;
     }
 
     .laguage-logo {
@@ -691,6 +711,7 @@
         <span class="span-selector">Read Wikipedia in your language</span>
         <i class="language-arrow"></i>
       </button>
+      <div class="line-of-middle"></div>
     </div>
     <div class="back-line"></div>
   </section>
